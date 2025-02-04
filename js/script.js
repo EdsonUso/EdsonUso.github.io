@@ -8,10 +8,10 @@ heart.addEventListener('click', () => {
     if(isMessageVisible) {
         message.innerHTML = `
             <h2>Vida</h2>
-            <p>Tenho amado ter você ao meu lado</p>
-            <p>Esses ultimos dias, descutimos bastante, por algumas coisas que você fez e eu fiz</p>
-            <p>Mas digo tudo isso porque quero o melhor pra nós dois, que esse relacionamento de certo</p>
-            <p>Acima de qualquer problema, eu te amo, continue descendo para entender...</p>
+            <p>Um dia você me perguntou porque eu te amava</p>
+            <p>Eu te dei 3 motivos do porque te amo</p>
+            <p>Mas tenho mais motivos para te amar, muito mais</p>
+            <p>Continue descendo para entender...</p>
         `;
         message.classList.add('visible');
     } else {
