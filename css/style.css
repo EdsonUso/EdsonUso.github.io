@@ -1,9 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #fae1dd;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    width: 100vw;
+    min-height: 100vh;
 }
 
 .section {
@@ -13,22 +21,21 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
+    padding: 1rem;
+    position: relative;
 }
 
 /* Seção Hero com coração */
 .hero-section {
     background: linear-gradient(135deg, #ff8fab, #ffc2d1);
-    position: relative;
 }
 
 .heart-container {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     position: relative;
     cursor: pointer;
-    margin-bottom: 30px;
+    margin: 2rem auto;
 }
 
 .heart {
@@ -69,15 +76,16 @@ body {
 
 .message-box {
     background: white;
-    padding: 20px;
+    padding: 1.25rem;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    max-width: 300px;
     width: 90%;
+    max-width: 300px;
     text-align: center;
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.5s ease;
+    margin: 1rem auto;
 }
 
 .message-box.visible {
@@ -85,32 +93,47 @@ body {
     transform: translateY(0);
 }
 
+.message-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ff4d6d;
+}
+
+.message-box p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
 /* Seções de conteúdo */
 .content-section {
-    padding: 60px 20px;
+    padding: 2rem 1rem;
 }
 
 .section-title {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #ff4d6d;
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
     text-align: center;
+    width: 100%;
 }
 
 .memories-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
-    max-width: 1200px;
+    gap: 1rem;
     width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
 }
 
 .memory-card {
     background: white;
     border-radius: 15px;
-    padding: 25px;
+    padding: 1.25rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
+    margin-bottom: 1rem;
 }
 
 .memory-card:hover {
@@ -120,10 +143,65 @@ body {
 .memory-title {
     color: #ff4d6d;
     font-size: 1.2rem;
-    margin-bottom: 15px;
+    margin-bottom: 0.75rem;
 }
 
 .memory-text {
     color: #666;
     line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Media Queries mais detalhadas */
+@media screen and (max-width: 320px) {
+    .heart-container {
+        width: 60px;
+        height: 60px;
+    }
+
+    .message-box {
+        padding: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    .heart-container {
+        width: 70px;
+        height: 70px;
+    }
+
+    .message-box {
+        max-width: 280px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .memories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .message-box {
+        max-width: 350px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .memories-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .message-box {
+        max-width: 400px;
+    }
+
+    .heart-container {
+        width: 100px;
+        height: 100px;
+    }
 }
