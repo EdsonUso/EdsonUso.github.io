@@ -7,19 +7,19 @@ heart.addEventListener('click', () => {
     
     if(isMessageVisible) {
         message.innerHTML = `
-            <h2>Vida</h2>
-            <p>Um dia você me perguntou porque eu te amava</p>
-            <p>Eu te dei 3 motivos do porque te amo</p>
-            <p>Mas tenho mais motivos para te amar, muito mais</p>
-            <p>Continue descendo para entender...</p>
+            <h2>Sarneia</h2>
+            <p>Sarneia sarneia sarneia!</p>
+            <p>Sarneia sarneia sarneia sarneia!</p>
+            <p>Sarneia sarneia sarneia</p>
+            <p>Sarneia sarneia...</p>
         `;
         message.classList.add('visible');
     } else {
         message.classList.remove('visible');
         setTimeout(() => {
             message.innerHTML = `
-                <h2>Meu Amor</h2>
-                <p>Clique no coração para ver uma mensagem especial...</p>
+                <h2>Sarneia</h2>
+                <p>Sarneia sarneia sarneia...</p>
             `;
         }, 500);
     }
