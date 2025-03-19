@@ -7,7 +7,7 @@ export function AboutSection() {
       <div className="space-y-8">
         <div className="flex flex-col items-center space-y-4">
           <Avatar className="h-32 w-32">
-            <AvatarImage src="/placeholder.svg?height=128&width=128" alt="Profile" />
+            <AvatarImage src="/perfil.jpeg?height=128&width=128" alt="Profile" />
             <AvatarFallback>JP</AvatarFallback>
           </Avatar>
           <div className="text-center">
