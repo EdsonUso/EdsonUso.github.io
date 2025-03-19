@@ -1,37 +1,37 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Music, Book, Camera, Plane, Code, Coffee } from "lucide-react"
+import { Music, Gamepad, Book, Camera, Code, Coffee, Cake } from "lucide-react"
 
 export function HobbiesSection() {
   const hobbies = [
     {
       title: "Música",
-      description: "Tocar violão e piano nas horas vagas, explorando diferentes gêneros musicais.",
+      description: "Tocar violão, ouvir albuns de generos músicais que gosto.",
       icon: Music,
     },
     {
-      title: "Leitura",
-      description: "Ler livros de ficção científica, desenvolvimento pessoal e biografias inspiradoras.",
-      icon: Book,
+      title: "Jogos",
+      description: "Jogos indies, imersivos, desenvolvendo mini jogos por hobbie",
+      icon: Gamepad,
     },
     {
-      title: "Fotografia",
-      description: "Capturar momentos especiais e explorar a fotografia de paisagem e urbana.",
+      title: "Filmes e serie",
+      description: "Assistir filmes novos, indpendente do genero, tenho um gosto bastante ecletico.",
       icon: Camera,
     },
     {
-      title: "Viagens",
-      description: "Conhecer novos lugares, culturas e experiências ao redor do mundo.",
-      icon: Plane,
+      title: "Estudos",
+      description: "Estudar coisas novas, desde tecnologia a ciencia no geral.",
+      icon: Book,
     },
     {
       title: "Programação",
-      description: "Desenvolver projetos pessoais e explorar novas tecnologias e linguagens.",
+      description: "Desenvolver projetos pessoais e explorar novas tecnologias, linguagens e tendências.",
       icon: Code,
     },
     {
-      title: "Café",
-      description: "Explorar diferentes métodos de preparo e origens de café especial.",
-      icon: Coffee,
+      title: "Cozinhar",
+      description: "Cozinhar e ver receitas por hobbie, visando um dia quem sabe, sair do basico arroz e feijão.",
+      icon: Cake,
     },
   ]
 

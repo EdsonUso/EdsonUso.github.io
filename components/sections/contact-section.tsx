@@ -130,7 +130,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm font-medium">Email</p>
-                    <p className="text-sm text-muted-foreground">contato@exemplo.com</p>
+                    <p className="text-sm text-muted-foreground">-----</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -139,7 +139,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm font-medium">Telefone</p>
-                    <p className="text-sm text-muted-foreground">(11) 98765-4321</p>
+                    <p className="text-sm text-muted-foreground">(11) 99431-4608</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -160,9 +160,9 @@ export function ContactSection() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted-foreground">
-                  Segunda a Sexta: 9h às 18h <br />
-                  Sábado: 10h às 14h <br />
-                  Domingo: Indisponível
+                  Segunda a Sexta: 7h ás 10h <br />
+                  Sábado: 10h às 15h <br />
+                  Domingo: 10h ás  13h
                 </p>
               </CardContent>
             </Card>

@@ -4,9 +4,9 @@ import { Quote } from "lucide-react"
 export function InspirationSection() {
   const inspirations = [
     {
-      quote: "Design não é apenas como parece e como se sente. Design é como funciona.",
-      author: "Steve Jobs",
-      role: "Co-fundador da Apple",
+      quote: "Se você quer encontrar os segredos do universo, pense em termos de energia, frequência e vibração.",
+      author: "Nikola Tesla",
+      role: "Inventor e Engenheiro"
     },
     {
       quote: "A simplicidade é a sofisticação suprema.",
@@ -14,14 +14,14 @@ export function InspirationSection() {
       role: "Polímata",
     },
     {
-      quote: "A inovação distingue entre um líder e um seguidor.",
-      author: "Steve Jobs",
-      role: "Co-fundador da Apple",
+      quote: "A razão não pode produzir a verdade, ela apenas pode dizer onde a verdade não está.",
+      author: "Baruch Espinoza",
+      role: "Filósofo"
     },
     {
-      quote: "Bom design é óbvio. Ótimo design é transparente.",
-      author: "Joe Sparano",
-      role: "Designer",
+      quote: "Você é especial.",
+      author: "Carla da Rocha",
+      role: "Minha mãe",
     },
     {
       quote: "A criatividade é a inteligência se divertindo.",
@@ -29,9 +29,9 @@ export function InspirationSection() {
       role: "Físico",
     },
     {
-      quote: "O verdadeiro progresso é aquele que coloca a tecnologia ao alcance de todos.",
-      author: "Henry Ford",
-      role: "Fundador da Ford Motor Company",
+      quote: "Estou orgulhoso de você.",
+      author: "Edivaldo da Cruz",
+      role: "Meu pai",
     },
   ]
 
@@ -41,8 +41,8 @@ export function InspirationSection() {
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold">Inspiração</h2>
           <p className="text-muted-foreground">
-            Estas são algumas das citações e pensamentos que me inspiram diariamente em minha jornada criativa e
-            profissional.
+            Estas são algumas das citações e pensamentos que me inspiram diariamente em minha jornada criativa,
+            profissional e pessoal.
           </p>
         </div>
 

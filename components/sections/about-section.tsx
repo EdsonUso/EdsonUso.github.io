@@ -11,22 +11,22 @@ export function AboutSection() {
             <AvatarFallback>JP</AvatarFallback>
           </Avatar>
           <div className="text-center">
-            <h1 className="text-4xl font-bold">João Pedro</h1>
-            <p className="text-xl text-muted-foreground">Desenvolvedor Web</p>
+            <h1 className="text-4xl font-bold">Edson Cruz</h1>
+            <p className="text-xl text-muted-foreground">Desenvolvedor FullStack</p>
           </div>
         </div>
 
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold">Sobre Mim</h2>
           <p className="text-muted-foreground">
-            Olá! Sou um desenvolvedor web apaixonado por criar experiências digitais intuitivas e atraentes. Com mais de
-            5 anos de experiência no desenvolvimento de aplicações web, tenho trabalhado com as mais recentes
-            tecnologias para entregar soluções de alta qualidade.
+          Sou um desenvolvedor apaixonado por criar soluções inovadoras, desde aplicações simples até sistemas mais complexos. Meu foco está no desenvolvimento Full Stack, garantindo eficiência tanto no backend quanto no frontend.
+
+Tenho experiência com diversas tecnologias, incluindo Java (Spring Boot),Kotlin(Android Native), JavaScript e TypeScript (Node.js, React) e PHP. Além disso, utilizo ferramentas e serviços de automação como Power Apps, GitHub Actions e Power Automate para otimizar processos e fluxos de trabalho.
           </p>
           <p className="text-muted-foreground">
-            Minha jornada na programação começou durante a faculdade, onde descobri minha paixão por resolver problemas
-            complexos e transformar ideias em realidade através do código. Desde então, tenho me dedicado a aprimorar
-            minhas habilidades e acompanhar as tendências do mercado.
+          Minha jornada com a tecnologia começou em um projeto chamado CCA, voltado para benefícios comunitários, onde participei de uma feira de robótica. Nesse evento, desenvolvi um aspirador de pó utilizando sucatas e lixo eletrônico, com a ajuda de um Arduino e o pouco que conseguia aplicar de C++.
+
+Foi nesse momento que me encantei ao ver os responsáveis pela limpeza do CCA usando o aspirador simples que criei apenas para a apresentação. Foi uma experiência marcante, pois percebi o impacto real que a tecnologia pode ter e soube, naquele instante, que era isso que eu queria fazer: criar soluções que fazem a diferença.
           </p>
         </div>
 
@@ -34,15 +34,15 @@ export function AboutSection() {
           <h2 className="text-2xl font-semibold">Habilidades</h2>
           <div className="flex flex-wrap gap-2">
             <Badge>React</Badge>
-            <Badge>Next.js</Badge>
+            <Badge>React Native</Badge>
             <Badge>TypeScript</Badge>
             <Badge>Node.js</Badge>
-            <Badge>Tailwind CSS</Badge>
             <Badge>UI/UX Design</Badge>
-            <Badge>Responsive Design</Badge>
             <Badge>API Development</Badge>
             <Badge>Git</Badge>
-            <Badge>Docker</Badge>
+            <Badge>Java</Badge>
+            <Badge>Spring Boot</Badge>
+            <Badge>Kotlin</Badge>
           </div>
         </div>
       </div>
