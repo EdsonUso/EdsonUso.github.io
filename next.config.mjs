@@ -21,6 +21,9 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  output: 'export',
+  basePath: "/EdsonUso.github.io",
+  assetPrefix: "/EdsonUso.github.io"
 }
 
 mergeConfig(nextConfig, userConfig)
