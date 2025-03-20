@@ -23,7 +23,10 @@ const nextConfig = {
   },
   output: 'export',
   basePath: "/EdsonUso.github.io",
-  assetPrefix: "/EdsonUso.github.io"
+  assetPrefix: "/EdsonUso.github.io",
+  compiler: {
+    styledComponents:true
+  }
 }
 
 mergeConfig(nextConfig, userConfig)
