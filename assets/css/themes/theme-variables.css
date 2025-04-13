@@ -1,0 +1,71 @@
+:root {
+    /* Cores primárias - Esquema Poimandres */
+    --color-primary: #5de4c7;
+    --color-primary-dark: #3aa691;
+    --color-primary-light: #89ece0;
+    --color-secondary: #a39ec4;
+    --color-secondary-dark: #735bb0;
+    --color-secondary-light: #c1b9ee;
+    --color-accent: #f087bd;
+    
+    /* Cores neutras/grayscale */
+    --color-bg: #fafafa;
+    --color-bg-secondary: #f0f0f0;
+    --color-text: #1e1e2e;
+    --color-text-light: #4c4f69;
+    --color-border: #e2e8f0;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    
+    /* Feedback colors */
+    --color-success: #35bc9b;
+    --color-error: #e84c3d;
+    --color-warning: #f2c94c;
+    
+    /* Espaçamento e layout */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 5rem;
+    
+    /* Tipografia */
+    --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-family-mono: 'Fira Code', 'Roboto Mono', monospace;
+    --font-size-xs: 0.75rem;  /* 12px */
+    --font-size-sm: 0.875rem; /* 14px */
+    --font-size-md: 1rem;     /* 16px */
+    --font-size-lg: 1.125rem; /* 18px */
+    --font-size-xl: 1.25rem;  /* 20px */
+    --font-size-2xl: 1.5rem;  /* 24px */
+    --font-size-3xl: 1.875rem; /* 30px */
+    --font-size-4xl: 2.25rem;  /* 36px */
+    --font-size-5xl: 3rem;     /* 48px */
+    
+    /* Borders e Radius */
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.5rem;
+    --border-radius-lg: 1rem;
+    --border-width: 1px;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 var(--color-shadow);
+    --shadow-md: 0 4px 6px -1px var(--color-shadow);
+    --shadow-lg: 0 10px 15px -3px var(--color-shadow);
+    
+    /* Z-index */
+    --z-index-navbar: 100;
+    --z-index-modal: 200;
+    --z-index-tooltip: 300;
+    
+    /* Animações */
+    --transition-base: all 0.3s ease;
+    --transition-fast: all 0.15s ease;
+    --transition-slow: all 0.5s ease;
+    
+    /* Container widths */
+    --container-max-width: 1200px;
+    --container-padding: var(--spacing-md);
+  }
+  
+  

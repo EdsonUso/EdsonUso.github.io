@@ -1,0 +1,8 @@
+body.dark-theme {
+    --color-bg: #1e1e2e;
+    --color-bg-secondary: #27273a;
+    --color-text: #f0f0f0;
+    --color-text-light: #c0caf5;
+    --color-border: #3d3d55;
+    --color-shadow: rgba(0, 0, 0, 0.3);
+  }
