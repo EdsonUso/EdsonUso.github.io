@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- Elementos Globais ---
     const body = document.body;
+    const scrollArrow = document.getElementById('scroll-arrow');
     const centralText = document.querySelector('.central-text');
     const animatedText = document.getElementById('texto-animado');
     const imageContainers = document.querySelectorAll('.animation-container');
@@ -40,9 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
         img.addEventListener('animationend', () => img.remove());
     }
 
-    // --- Lógica de Cor de Fundo ---
+    // --- Lógica de Cor de Fundo e Seta de Rolagem ---
     window.addEventListener('scroll', () => {
-        body.classList.toggle('scrolled', window.scrollY > 50);
+        const scrolled = window.scrollY > 50;
+        body.classList.toggle('scrolled', scrolled);
+        scrollArrow.classList.toggle('hidden', scrolled);
     });
 
     // --- Fase 2: Animação de Imagem + Texto ---
