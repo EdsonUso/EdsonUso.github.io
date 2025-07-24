@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para a Melhor Mãe do Mundo</title>
+    <link rel="stylesheet" href="assets/css/mae.css">
+</head>
+<body>
+
+    <!-- Fase 1: Texto Central -->
+    <div class="central-text">
+        <p id="texto-animado">...</p>
+    </div>
+    <div class="animation-container left"></div>
+    <div class="animation-container right"></div>
+
+    <!-- Fase 3: Imagem em Tela Cheia e Texto Lateral -->
+    <div id="fullscreen-image-container"></div>
+    <div id="lateral-text-container">
+        <p id="texto-lateral">...</p>
+    </div>
+
+    <main class="scroll-content">
+        <!-- Seções para a Fase 1 -->
+        <section class="scroll-section" data-text="Oi mãe."></section>
+        <section class="scroll-section" data-text="Estou aqui para te desejar um feliz dia das mães."></section>
+        <section class="scroll-section" data-text="Dizer como e o quanto eu te amo."></section>
+        <section class="scroll-section" data-text="Mas antes, quero pedir desculpas."></section>
+        <section class="scroll-section" data-text="Mais uma vez eu peço desculpas por ter esquecido a data especial de hoje. 
+        mas principalmente, por não estar te dando a devida atenção"></section>
+        <section class="scroll-section" data-text="sim, uma nova fase da minha vida esta começando, mas isso não muda nada"></section>
+        <section class="scroll-section" data-text="Você nunca vai deixar de ser minha prioridade, meu amor por você nunca vai se perder ou diminuir."></section>
+        <section class="scroll-section" data-text="Quero dizer obrigado por me amar, mesmo sendo esquecido como sou, mesmo falhando como muitas vezes falho"></section>
+        <section class="scroll-section" data-text="Quero dizer obrigado por se doar como se doa, por tornar o homem que sou"></section>
+        <section class="scroll-section" data-text="mas nesse momento eu te peço pra permitir demonstrar o quanto eu te amo"></section>
+        <section class="scroll-section" data-text="o quanto estou feliz pelo seu dia, por estar mais um ano comemorando seu aniversario"></section>
+        <section class="scroll-section" data-text="Hoje é o seu dia minha mãe e me desculpa se eu já te chateei logo cedo"></section>
+
+        <!-- Seções para a Fase 2: Imagem + Texto -->
+        <section class="image-text-section" data-image="assets/images/mae/sequencia/img1.svg" data-caption="Lembranças que aquecem o coração.">
+            <div class="content-wrapper">
+                <img src="assets/images/mae/WhatsApp Image 2025-07-24 at 10.48.49.jpeg" alt="Lembrança 1">
+                <p>mas eu te amo, te amo do fundo do meu coração</p>
+            </div>
+        </section>
+        <section class="image-text-section" data-image="assets/images/mae/sequencia/img2.svg" data-caption="Momentos que se tornaram eternos.">
+            <div class="content-wrapper">
+                <img src="assets/images/mae/WhatsApp Image 2025-07-24 at 10.49.32.jpeg" alt="Lembrança 2">
+                <p>antes mesmo de aprender a falar eu já te amava</p>
+            </div>
+        </section>
+        <section id="expand-trigger-section" class="image-text-section" data-image="assets/images/mae/WhatsApp Image 2025-07-24 at 10.40.21.jpeg" data-caption="E a promessa de muitos mais.">
+            <div class="content-wrapper">
+                <img src="assets/images/mae/WhatsApp Image 2025-07-24 at 10.40.21.jpeg" alt="Lembrança 3">
+                <p>você é a essoa que eu sempre recorro, a pessoa que sempre me trás tranqulidade, meu porto seguro</p>
+            </div>
+        </section>
+
+        <!-- Seções para a Fase 3: Gatilhos para o texto lateral -->
+        <section class="lateral-text-trigger" data-lateral-text="você nunca vai deixar de fazer parte da minha vida, nada vai mudar isso"></section>
+        <section class="lateral-text-trigger" data-lateral-text="eu te amo demais e não quero que pense o contrario"></section>
+        <section class="lateral-text-trigger" data-lateral-text="hoje é o seu dia é quero que ele seja feliz"></section>
+        <section class="lateral-text-trigger" data-lateral-text="Feliz aniversario! Eu te amo!"></section>
+
+    </main>
+
+    <script src="assets/js/mae.js"></script>
+</body>
+</html>

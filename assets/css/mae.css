@@ -1,0 +1,187 @@
+:root {
+    --cor-principal: #A60311;
+    --cor-secundaria: #BF0436;
+    --cor-destaque: #F23D7F;
+    --cor-base: #D90404;
+    --cor-texto: #FFFFFF;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    transition: background-color 0.8s ease-in-out;
+}
+
+body.scrolled {
+    background-color: #F2F2F2;
+}
+
+body.scrolled .central-text {
+    color: #000000;
+}
+
+.central-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 10;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.central-text.visible {
+    opacity: 1;
+}
+
+.scroll-content {
+    position: relative;
+    z-index: 1;
+}
+
+.scroll-section {
+    height: 100vh; /* Cada seção ocupa a altura inteira da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    z-index: 5;
+}
+
+.animation-container.left {
+    left: 5%;
+}
+
+.animation-container.right {
+    right: 5%;
+}
+
+.animated-image {
+    position: absolute;
+    bottom: -150px; /* Começa fora da tela */
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: subirPararSubir 10s ease-in-out forwards;
+}
+
+/* --- FASE 2: Imagem + Texto --- */
+.image-text-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image-text-section .content-wrapper {
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    color: #000000; /* O texto aqui já é preto */
+}
+
+.image-text-section.visible .content-wrapper {
+    opacity: 1;
+}
+
+.image-text-section img {
+    max-width: 40vw;
+    max-height: 50vh;
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.image-text-section p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* --- FASE 3: Tela Cheia e Texto Lateral --- */
+#fullscreen-image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none; /* Não interfere com o mouse */
+    transition: opacity 1s ease-in-out;
+}
+
+#fullscreen-image-container.visible {
+    opacity: 1;
+}
+
+#lateral-text-container {
+    position: fixed;
+    bottom: 10%;
+    left: 5%;
+    z-index: 110;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#lateral-text-container.visible {
+    opacity: 1;
+}
+
+.lateral-text-trigger {
+    height: 80vh; /* Altura dos gatilhos de texto */
+}
+
+/* Modificações de estado quando a tela cheia está ativa */
+body.fullscreen-active {
+    /* A rolagem continua para a Fase 3 */
+}
+
+body.fullscreen-active .central-text,
+body.fullscreen-active .animation-container {
+    display: none; /* Esconde os elementos da Fase 1 */
+}
+
+
+@keyframes subirPararSubir {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    20% {
+        transform: translateY(-40vh);
+        opacity: 1;
+    }
+    40% {
+        transform: translateY(-45vh); /* Para um pouco */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh); /* Sobe até sumir */
+        opacity: 0;
+    }
+}
